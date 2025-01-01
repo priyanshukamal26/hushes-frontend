@@ -1,4 +1,4 @@
-const socket = io("http://localhost:3000");
+const socket = io("https://hushes-backend.onrender.com");
 
 document.getElementById("joinRoom").addEventListener("click", function () {
     const roomName = document.getElementById("roomName").value.trim();
