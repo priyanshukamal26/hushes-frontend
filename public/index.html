@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hushes - Private Chats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="room-selection">
+        <h1>Welcome to <span class="highlight">Hushes</span></h1>
+        <p>Your private room for conversations that disappear.</p>
+        <input type="text" id="roomName" placeholder="Enter Room Name">
+        <button id="joinRoom">Join Room</button>
+    </div>
+
+    <div id="chatroom" style="display: none;">
+        <h1><span class="highlight">Hushes</span> Room: <span id="currentRoom"></span></h1>
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Type a message">
+        <button id="sendMessage">Send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
